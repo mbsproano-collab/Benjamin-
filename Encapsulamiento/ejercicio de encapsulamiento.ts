@@ -1,14 +1,10 @@
-// Ejercicio de Encapsulamiento.
-// Programacion Orientada a Objetos.
 class CuentaBancaria {
-    // Propiedad privada (no accesible directamente)
     private saldo: number;
 
     constructor(saldoInicial: number) {
         this.saldo = saldoInicial;
     }
 
-    // Método público para depositar dinero
     public depositar(monto: number): void {
         if (monto > 0) {
             this.saldo += monto;
@@ -18,7 +14,6 @@ class CuentaBancaria {
         }
     }
 
-    // Método público para retirar dinero
     public retirar(monto: number): void {
         if (monto > 0 && monto <= this.saldo) {
             this.saldo -= monto;
@@ -28,13 +23,11 @@ class CuentaBancaria {
         }
     }
 
-    // Getter para consultar el saldo
     public getSaldo(): number {
         return this.saldo;
     }
 }
 
-// Uso de la clase
 const cuenta = new CuentaBancaria(100);
 
 cuenta.depositar(50);
