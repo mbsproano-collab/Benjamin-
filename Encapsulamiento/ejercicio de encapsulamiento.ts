@@ -1,6 +1,5 @@
 // Ejercicio de Encapsulamiento.
 // Programacion Orientada a Objetos.
-
 class CuentaBancaria {
     // Propiedad privada (no accesible directamente)
     private saldo: number;
